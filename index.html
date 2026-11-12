@@ -2,259 +2,393 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Rafael Pazeto Advocacia</title>
-<script src="./vendor/react.js"></script>
-<script src="./vendor/react-dom.js"></script>
-<script src="./support.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafael Raasch Pazeto | Advocacia em Direito Digital, LGPD e Juizado Especial Cível</title>
+<meta name="description" content="Rafael Raasch Pazeto, advogado. Atuação em Direito Digital, LGPD e Juizado Especial Cível, com orientação clara e atendimento no Espírito Santo e online.">
+<meta name="theme-color" content="#0A1424">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Rafael Raasch Pazeto | Advocacia">
+<meta property="og:description" content="Advocacia em Direito Digital, proteção de dados pessoais (LGPD) e Juizado Especial Cível. Espírito Santo e atendimento online.">
+<!-- og:image (prévia do link no WhatsApp): publique o site, troque SEU-DOMINIO pelo endereço real e descomente a linha abaixo -->
+<!-- <meta property="og:image" content="https://SEU-DOMINIO/assets/og.png"> -->
+<!-- Analytics (Google Analytics / Meta Pixel): cole os scripts aqui -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Attorney","name":"Rafael Raasch Pazeto","description":"Advocacia em Direito Digital, LGPD e Juizado Especial Cível","areaServed":"BR","address":{"@type":"PostalAddress","addressRegion":"ES","addressCountry":"BR"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Inter:wght@400;500;600&amp;display=swap">
-<style>
-body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#0F1B2D;background:#FFFFFF}
-a{color:inherit;text-decoration:none}
-.btn{transition:transform .15s ease,background .15s ease}
-.btn:hover{transform:translateY(-2px)}
-.navlink:hover{color:#9A6B2F}
-.card{transition:transform .2s ease,box-shadow .2s ease}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(15,27,45,.10)}
-html{scroll-behavior:smooth}
-</style>
-</helmet>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="rp-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EBD3A0"/><stop offset=".55" stop-color="#C9A66B"/><stop offset="1" stop-color="#A9823F"/></linearGradient>
+<symbol id="rp-mark" viewBox="0 0 342.0 351.2"><path d="M99.2 196.2V323.2L150 330V343.2H11.2V330L51 323.2V27.8L8 21.2V8H152.8Q215.8 8 245.8 29.2Q275.8 50.5 275.8 97.5Q275.8 131 257.5 155.4Q239.2 179.8 207 189.2L297.8 323.2L334 330V343.2H253.8L159.5 196.2ZM226 101Q226 62.8 207.4 46.6Q188.8 30.5 142 30.5H99.2V173.8H143.5Q188.2 173.8 207.1 157.1Q226 140.5 226 101Z" fill="var(--mark-r,#F3EDE0)"/><path d="M185.3 81.9Q185.3 68.7 180.4 63.5Q175.5 58.2 163.1 58.2H156.6V107.3H163.5Q174.9 107.3 180.1 101.5Q185.3 95.8 185.3 81.9ZM156.6 116.4V151.5L175 153.8V159.8H117.4V153.8L130.5 151.5V57.3L116.4 55.2V49.1H165.1Q188.6 49.1 200.3 57Q211.9 64.9 211.9 81.7Q211.9 116.4 171.5 116.4Z" fill="url(#rp-gold)"/></symbol>
+<symbol id="rp-seal" viewBox="0 0 400 400"><circle cx="200" cy="200" r="190" fill="none" stroke="url(#rp-gold)" stroke-width="2.5"/><circle cx="200" cy="200" r="178" fill="none" stroke="url(#rp-gold)" stroke-width="1" opacity=".55"/><g transform="translate(94.0 91.1) scale(.62)"><path d="M99.2 196.2V323.2L150 330V343.2H11.2V330L51 323.2V27.8L8 21.2V8H152.8Q215.8 8 245.8 29.2Q275.8 50.5 275.8 97.5Q275.8 131 257.5 155.4Q239.2 179.8 207 189.2L297.8 323.2L334 330V343.2H253.8L159.5 196.2ZM226 101Q226 62.8 207.4 46.6Q188.8 30.5 142 30.5H99.2V173.8H143.5Q188.2 173.8 207.1 157.1Q226 140.5 226 101Z" fill="var(--mark-r,#F3EDE0)"/><path d="M185.3 81.9Q185.3 68.7 180.4 63.5Q175.5 58.2 163.1 58.2H156.6V107.3H163.5Q174.9 107.3 180.1 101.5Q185.3 95.8 185.3 81.9ZM156.6 116.4V151.5L175 153.8V159.8H117.4V153.8L130.5 151.5V57.3L116.4 55.2V49.1H165.1Q188.6 49.1 200.3 57Q211.9 64.9 211.9 81.7Q211.9 116.4 171.5 116.4Z" fill="url(#rp-gold)"/></g></symbol>
+</defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol></svg>
 
-<div style="width:100%;background:#FFFFFF;font-family:'Inter',system-ui,sans-serif;color:#0F1B2D">
-
-  <!-- HEADER -->
-  <header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding:16px 56px;background:#FFFFFF;border-bottom:1px solid #E7E4DD">
-    <a href="#topo" style="display:flex;align-items:center;gap:14px" aria-label="Rafael Pazeto Advocacia — início">
-      <img src="./assets/f918c7cacbe7e98b113e3e3dc38a819b.png" alt="Logotipo Rafael Pazeto" style="width:64px;height:48px;object-fit:contain">
-      <div style="display:flex;flex-direction:column;line-height:1.15">
-        <span style="font-family:'Newsreader',Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.01em">Rafael Pazeto</span>
-        <span style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#6B5A3E">Advocacia</span>
-      </div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Rafael Raasch Pazeto, Advocacia. Início">
+      <span class="mark" aria-hidden="true"><svg><use href="#rp-mark"/></svg></span>
+      <span class="brand-txt"><span class="brand-name">Rafael Raasch Pazeto</span><span class="brand-sub">Advocacia</span></span>
     </a>
-    <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 32px;font-size:14px;font-weight:500">
-      <a class="navlink" href="#sobre" style="padding:12px 0">Sobre</a>
-      <a class="navlink" href="#areas" style="padding:12px 0">Áreas de atuação</a>
-      <a class="navlink" href="#atendimento" style="padding:12px 0">Atendimento</a>
-      <a class="navlink" href="#duvidas" style="padding:12px 0">Dúvidas</a>
-      <a class="btn" href="https://wa.me/5527999994100?text=Ol%C3%A1%2C%20Dr.%20Rafael.%20Gostaria%20de%20agendar%20uma%20conversa." style="display:inline-flex;align-items:center;gap:8px;min-height:44px;box-sizing:border-box;padding:0 20px;background:#0F1B2D;color:#FFFFFF;border-radius:999px;font-weight:600">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5L3 21z"></path><path d="M9 10c0 3 2 5 5 5l1.2-1.4-2-1-.8.7c-.8-.3-1.6-1.1-1.9-1.9l.7-.8-1-2L9 10z"></path></svg>
-        Falar no WhatsApp
-      </a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#abordagem">Abordagem</a>
+      <a href="#atuacao">Áreas de atuação</a>
+      <a href="#metodo">Como funciona</a>
+      <a href="#duvidas">Dúvidas</a>
     </nav>
-  </header>
+    <a class="btn btn-primary" data-wa="default" href="https://wa.me/" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>
+      <span>Falar no WhatsApp</span>
+    </a>
+  </div>
+</header>
 
+<main id="topo">
   <!-- HERO -->
-  <section id="topo" style="background:#0F1B2D;color:#FFFFFF;padding:96px 56px 104px">
-    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
-      <div style="flex:1 1 480px;min-width:0">
-        <div style="display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(212,168,98,.5);border-radius:999px;font-size:13px;letter-spacing:.08em;color:#D4A862">
-          <span style="width:6px;height:6px;border-radius:50%;background:#D4A862"></span>
-          OAB/ES 28.047
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas id="mesh" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Advocacia · Direito Digital · LGPD · Juizado Especial Cível</p>
+        <h1 id="hero-title">Direito e tecnologia. <span class="spec">Seus direitos, com clareza e estratégia.</span></h1>
+        <p class="lede">Sou Rafael Raasch Pazeto, advogado. Atuo em Direito Digital, proteção de dados pessoais e demandas no Juizado Especial Cível, com orientação direta, linguagem acessível e análise individual de cada caso.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de conversar sobre meu caso." href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar sobre meu caso</a>
+          <a class="btn btn-ghost" href="#atuacao">Conhecer áreas de atuação</a>
         </div>
-        <h1 style="margin:28px 0 0;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:clamp(40px,5.4vw,68px);line-height:1.05;letter-spacing:-.01em">Advocacia estratégica para quem decide com segurança jurídica.</h1>
-        <p style="margin:28px 0 0;font-size:19px;line-height:1.6;color:#C9D1DC;max-width:560px">Atendimento direto, linguagem clara e soluções jurídicas pensadas para o seu negócio e para a sua realidade.</p>
-        <div style="margin-top:40px;display:flex;flex-wrap:wrap;gap:16px">
-          <a class="btn" href="https://wa.me/5527999994100?text=Ol%C3%A1%2C%20Dr.%20Rafael.%20Gostaria%20de%20agendar%20uma%20conversa." style="display:inline-flex;align-items:center;gap:10px;min-height:52px;box-sizing:border-box;padding:0 28px;background:#D4A862;color:#0F1B2D;border-radius:999px;font-weight:600;font-size:16px">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5L3 21z"></path><path d="M9 10c0 3 2 5 5 5l1.2-1.4-2-1-.8.7c-.8-.3-1.6-1.1-1.9-1.9l.7-.8-1-2L9 10z"></path></svg>
-            Agendar uma conversa
-          </a>
-          <a class="btn" href="#areas" style="display:inline-flex;align-items:center;min-height:52px;box-sizing:border-box;padding:0 28px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-weight:500;font-size:16px">Conheça as áreas de atuação</a>
-        </div>
+        <ul class="hero-proof">
+          <li>Atendimento no Espírito Santo e online</li>
+          <li>Comunicação direta com o advogado</li>
+          <li>Sigilo profissional</li>
+        </ul>
       </div>
-      <div style="flex:0 1 380px;min-width:260px;display:flex;justify-content:center">
-        <div style="width:100%;max-width:340px;box-sizing:border-box;background:#FFFFFF;border-radius:20px;padding:44px 32px;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center">
-          <img src="./assets/f918c7cacbe7e98b113e3e3dc38a819b.png" alt="Marca Rafael Pazeto" style="width:170px;height:128px;object-fit:contain">
-          <div style="width:48px;height:2px;background:#9A6B2F"></div>
-          <div style="font-family:'Newsreader',Georgia,serif;font-size:26px;font-weight:600;color:#0F1B2D">Rafael Pazeto</div>
-          <div style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#6B5A3E">Advogado · OAB/ES 28.047</div>
+
+      <nav class="hero-areas" aria-label="Conheça as três áreas de atuação">
+        <a class="hero-area" href="#direito-digital">
+          <span class="hero-area-number">01</span>
+          <span class="hero-area-content"><strong>Direito Digital</strong><small>Relações, serviços e negócios no ambiente online.</small></span>
+          <span class="hero-area-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-area" href="#lgpd">
+          <span class="hero-area-number">02</span>
+          <span class="hero-area-content"><strong>LGPD</strong><small>Privacidade e proteção de dados pessoais.</small></span>
+          <span class="hero-area-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-area" href="#juizado-especial-civel">
+          <span class="hero-area-number">03</span>
+          <span class="hero-area-content"><strong>Juizado Especial Cível</strong><small>Orientação em conflitos cíveis e de consumo.</small></span>
+          <span class="hero-area-arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SITUAÇÕES -->
+  <section class="band" id="situacoes" aria-labelledby="situacoes-title" style="padding-top:clamp(40px,6vw,72px)">
+    <div class="wrap">
+      <div class="pains-head">
+        <p class="eyebrow">Por onde começar</p>
+        <h2 class="h2" id="situacoes-title">Alguma dessas situações é a sua?</h2>
+        <p class="lede">Selecione as situações que mais se aproximam do seu caso. Sua mensagem será preparada para o WhatsApp.</p>
+      </div>
+      <div class="pains" id="pains">
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Tenho um site, aplicativo ou negócio digital e preciso de orientação jurídica</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Preciso revisar termos de uso, política de privacidade ou contratos digitais</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Quero entender se minha empresa está adequada à LGPD</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Recebi uma solicitação sobre dados pessoais ou tive um incidente com informações</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Tive um problema com produto, serviço ou compra e quero conhecer meus direitos</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Recebi uma cobrança que considero indevida ou tive problema em um contrato de consumo</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Quero avaliar se meu caso pode ser levado ao Juizado Especial Cível</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Recebi uma citação ou preciso de orientação em um processo cível</span></button>
+        <button type="button" class="pain" aria-pressed="false"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke="#0A1424" stroke-width="2.4" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg></span><span>Não sei em qual dessas áreas meu caso se encaixa</span></button>
+      </div>
+      <div class="pains-cta">
+        <a class="btn btn-primary" id="pains-go" href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span id="pains-go-label">Falar sobre minha situação</span></a>
+        <span class="pains-count" id="pains-count">Nenhum item marcado ainda.</span>
+      </div>
+      <div class="wa-preview" aria-live="polite">
+        <small>Prévia da mensagem no WhatsApp</small>
+        <div class="wa-bubble" id="wa-preview-text"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABORDAGEM -->
+  <section class="band sheet" id="abordagem" aria-labelledby="abordagem-title">
+    <div class="wrap approach">
+      <div class="approach-intro">
+        <p class="eyebrow">Minha abordagem</p>
+        <h2 class="h2" id="abordagem-title">Orientação jurídica conectada à sua realidade.</h2>
+        <div class="facet-rule" aria-hidden="true"></div>
+        <p>Cada situação exige uma análise própria. No Direito Digital e na LGPD, o foco é compreender como a tecnologia é utilizada e como os dados pessoais são tratados. No Juizado Especial Cível, avalio os fatos, os documentos e os caminhos disponíveis para buscar a tutela dos seus direitos. A estratégia começa pela realidade de cada pessoa ou negócio.</p>
+        <ul class="nots">
+          <li>Avalio o cenário antes de indicar qualquer medida</li>
+          <li>Explico riscos, possibilidades e próximos passos</li>
+          <li>Não prometo resultados: cada caso depende de suas circunstâncias</li>
+        </ul>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><rect x="6" y="8" width="32" height="25" rx="3" stroke="#0E1A30" stroke-width="2"/><path d="M6 15h32M12 11.5h.1M16 11.5h.1M22 23h12M22 28h8" stroke="#A9823F" stroke-width="2.2" stroke-linecap="round"/><path d="M17 33v4m10-4v4m-13 0h16" stroke="#0E1A30" stroke-width="2"/></svg>
+          <div><h3>Direito Digital</h3><p>Orientação jurídica para relações, conteúdo, serviços e negócios que acontecem no ambiente online.</p></div>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M22 4 37 9.5V21c0 9.2-6.1 15.6-15 19-8.9-3.4-15-9.8-15-19V9.5Z" stroke="#0E1A30" stroke-width="2"/><path d="m15.5 22 4.8 4.8 8.7-9.6" stroke="#A9823F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>LGPD e privacidade</h3><p>Mais clareza sobre coleta, uso, armazenamento e compartilhamento de dados pessoais.</p></div>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M8 7h28v30H8z" stroke="#0E1A30" stroke-width="2"/><path d="M14 15h16M14 21h16M14 27h9" stroke="#A9823F" stroke-width="2.2" stroke-linecap="round"/><path d="m25 31 3 3 6-7" stroke="#0E1A30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Juizado Especial Cível</h3><p>Análise de documentos, alternativas e medidas judiciais adequadas ao caso concreto.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CREDENCIAIS -->
-  <section style="padding:48px 56px;background:#FFFFFF;border-bottom:1px solid #E7E4DD">
-    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:32px">
-      <sc-for list="{{figures}}" as="fig" hint-placeholder-count="4">
-        <div style="flex:1 1 220px;min-width:0;display:flex;align-items:center;gap:16px">
-          <div style="flex:none;width:52px;height:52px;border-radius:50%;border:1px solid #D9D2C3;display:flex;align-items:center;justify-content:center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9A6B2F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{fig.icon}}"></path></svg>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
-            <span style="font-family:'Newsreader',Georgia,serif;font-size:28px;font-weight:600;line-height:1.1">{{fig.value}}</span>
-            <span style="font-size:13px;line-height:1.4;color:#4A5668">{{fig.label}}</span>
-          </div>
+  <!-- ÁREAS DE ATUAÇÃO -->
+  <section class="band" id="atuacao" aria-labelledby="atuacao-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Áreas de atuação</p>
+        <h2 class="h2" id="atuacao-title">Três frentes. Uma atuação jurídica clara e próxima.</h2>
+        <p class="lede">Atuação concentrada em Direito Digital, proteção de dados pessoais e Juizado Especial Cível. Escolha o tema mais próximo da sua necessidade para iniciar a conversa.</p>
+      </div>
+      <div class="services">
+        <article class="svc" id="direito-digital">
+          <span class="svc-badge">01 · Tecnologia e ambiente online</span>
+          <h3>Direito Digital</h3>
+          <p class="svc-why">Orientação jurídica para pessoas e negócios nas relações que acontecem no ambiente digital.</p>
+          <ul>
+            <li>Termos de uso, políticas e contratos digitais</li>
+            <li>Sites, aplicativos, plataformas e comércio eletrônico</li>
+            <li>Direitos relacionados a conteúdo, imagem e presença online</li>
+            <li>Responsabilidade civil e conflitos no ambiente digital</li>
+          </ul>
+          <a class="btn btn-primary btn-sm" data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de conversar sobre Direito Digital." href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar sobre Direito Digital</a>
+        </article>
+        <article class="svc" id="lgpd">
+          <span class="svc-badge">02 · Privacidade e dados pessoais</span>
+          <h3>LGPD</h3>
+          <p class="svc-why">Apoio jurídico para compreender e tratar dados pessoais com responsabilidade.</p>
+          <ul>
+            <li>Diagnóstico de práticas de tratamento de dados</li>
+            <li>Políticas de privacidade e documentos relacionados</li>
+            <li>Orientação sobre direitos dos titulares de dados</li>
+            <li>Apoio jurídico em incidentes e medidas de conformidade</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de conversar sobre LGPD e proteção de dados pessoais." href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar sobre LGPD</a>
+        </article>
+        <article class="svc" id="juizado-especial-civel">
+          <span class="svc-badge">03 · Conflitos cíveis e de consumo</span>
+          <h3>Juizado Especial Cível</h3>
+          <p class="svc-why">Análise e orientação em demandas que possam ser tratadas no Juizado Especial Cível.</p>
+          <ul>
+            <li>Avaliação dos fatos, documentos e provas disponíveis</li>
+            <li>Conflitos em relações de consumo e contratos</li>
+            <li>Cobranças indevidas e falhas na prestação de serviços</li>
+            <li>Orientação e acompanhamento de medidas cabíveis</li>
+          </ul>
+          <a class="btn btn-ghost btn-sm" data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de conversar sobre uma demanda no Juizado Especial Cível." href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar sobre Juizado Cível</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="band" id="metodo" aria-labelledby="metodo-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="h2" id="metodo-title">Seis etapas, três fases</h2>
+        <p class="lede">Um caminho transparente para que você entenda a análise, as alternativas e cada próximo passo.</p>
+      </div>
+      <div class="method">
+        <div class="phase">
+          <h3>Entender</h3>
+          <ol>
+            <li><span class="n">1</span><div><b>Conversa inicial</b><span>Você conta o que está acontecendo, pelo WhatsApp ou em reunião.</span></div></li>
+            <li><span class="n">2</span><div><b>Análise do caso</b><span>Fatos, documentos, provas disponíveis e objetivos examinados com cuidado.</span></div></li>
+          </ol>
         </div>
-      </sc-for>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section id="sobre" style="padding:104px 56px;background:#FFFFFF">
-    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:56px 80px">
-      <div style="flex:1 1 320px;min-width:0">
-        <div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#9A6B2F;font-weight:600">Sobre</div>
-        <h2 style="margin:16px 0 0;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:clamp(32px,3.6vw,46px);line-height:1.12">Atendimento jurídico próximo, claro e objetivo.</h2>
-      </div>
-      <div style="flex:1.4 1 420px;min-width:0;display:flex;flex-direction:column;gap:20px;font-size:18px;line-height:1.7;color:#2B3748">
-        <p style="margin:0">Sou Rafael Pazeto, advogado inscrito na OAB/ES sob o nº 28.047. Atuo de forma consultiva e preventiva, ajudando pessoas e empresas a tomar decisões com clareza sobre riscos, contratos e obrigações.</p>
-        <p style="margin:0">Acredito em atendimento próximo e objetivo: você sabe o que está sendo feito, por que, e qual é o próximo passo. Sem juridiquês desnecessário e com atenção ao uso inteligente da tecnologia para dar agilidade ao trabalho.</p>
-        <div style="display:flex;flex-direction:column;gap:14px;margin-top:8px;padding:28px 28px;background:#F6F3EC;border-radius:16px">
-          <sc-for list="{{checks}}" as="c" hint-placeholder-count="4">
-            <div style="display:flex;align-items:flex-start;gap:12px;font-size:16px;line-height:1.5;font-weight:500;color:#0F1B2D">
-              <svg style="flex:none;margin-top:2px" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9A6B2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5l3 3 5-6"></path></svg>
-              <span>{{c.text}}</span>
-            </div>
-          </sc-for>
+        <div class="phase">
+          <h3>Estruturar</h3>
+          <ol>
+            <li><span class="n">3</span><div><b>Estratégia e proposta</b><span>Caminhos possíveis, riscos de cada um, escopo, prazo e honorários definidos antes de começar.</span></div></li>
+            <li><span class="n">4</span><div><b>Orientações e medidas jurídicas</b><span>Providências extrajudiciais ou judiciais adequadas à situação, conforme o caso.</span></div></li>
+          </ol>
+        </div>
+        <div class="phase">
+          <h3>Acompanhar</h3>
+          <ol>
+            <li><span class="n">5</span><div><b>Execução com comunicação clara</b><span>Você é informado dos andamentos, em linguagem que dá para entender.</span></div></li>
+            <li><span class="n">6</span><div><b>Acompanhamento e próximos passos</b><span>Orientações sobre os andamentos e as providências necessárias em cada etapa.</span></div></li>
+          </ol>
         </div>
       </div>
+      <p class="method-note">Escopo, entregas, responsabilidades e honorários ficam em contrato escrito, antes do início do trabalho.</p>
     </div>
   </section>
 
-  <!-- AREAS -->
-  <section id="areas" style="padding:104px 56px;background:#F6F3EC">
-    <div style="max-width:1200px;margin:0 auto">
-      <div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#9A6B2F;font-weight:600">Áreas de atuação</div>
-      <h2 style="margin:16px 0 0;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:clamp(32px,3.6vw,46px);line-height:1.12;max-width:720px">Onde posso ajudar você</h2>
-      <div style="margin-top:56px;display:flex;flex-wrap:wrap;gap:24px">
-        <sc-for list="{{areas}}" as="area" hint-placeholder-count="4">
-          <div class="card" style="flex:1 1 240px;min-width:0;box-sizing:border-box;background:#FFFFFF;border:1px solid #E7E4DD;border-radius:16px;padding:36px 32px;display:flex;flex-direction:column;gap:16px">
-            <div style="width:48px;height:48px;border-radius:12px;background:#0F1B2D;display:flex;align-items:center;justify-content:center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A862" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{area.icon}}"></path></svg>
-            </div>
-            <h3 style="margin:8px 0 0;font-family:'Newsreader',Georgia,serif;font-size:24px;font-weight:600;line-height:1.2">{{area.title}}</h3>
-            <p style="margin:0;font-size:16px;line-height:1.65;color:#3A4658">{{area.text}}</p>
-            <a class="navlink" href="{{area.link}}" style="margin-top:auto;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:#0F1B2D">
-              Conversar sobre este tema
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-            </a>
-          </div>
-        </sc-for>
+  <!-- QUEM ATENDO -->
+  <!-- PERFIS DE ATENDIMENTO -->
+  <section class="band" id="clientes" aria-labelledby="clientes-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Para quem é a orientação</p>
+        <h2 class="h2" id="clientes-title">Pessoas e negócios, em situações diferentes</h2>
+        <p class="lede">O atendimento considera o contexto de cada cliente e a natureza do problema, sem soluções prontas.</p>
+      </div>
+      <div class="segs">
+        <a data-wa="Olá, Dr. Rafael! Vim pelo site. Sou pessoa consumidora e gostaria de orientação sobre meus direitos." href="https://wa.me/" target="_blank" rel="noopener">
+          <h3>Pessoas consumidoras</h3>
+          <p>Problemas com produtos, serviços, cobranças e relações de consumo.</p>
+          <span class="go">Conversar sobre meu caso</span>
+        </a>
+        <a data-wa="Olá, Dr. Rafael! Vim pelo site. Represento uma empresa ou sou profissional e gostaria de conversar sobre LGPD e proteção de dados." href="https://wa.me/" target="_blank" rel="noopener">
+          <h3>Empresas e profissionais</h3>
+          <p>Privacidade, tratamento de dados pessoais e responsabilidades no ambiente digital.</p>
+          <span class="go">Conversar sobre isso</span>
+        </a>
+        <a data-wa="Olá, Dr. Rafael! Vim pelo site. Tenho um negócio digital e gostaria de conversar sobre orientação jurídica." href="https://wa.me/" target="_blank" rel="noopener">
+          <h3>Negócios digitais</h3>
+          <p>Sites, aplicativos, e-commerce, plataformas e prestação de serviços online.</p>
+          <span class="go">Conversar sobre isso</span>
+        </a>
+      </div>
+      <p class="segs-note">Esses são exemplos de situações e perfis. A conversa inicial serve para compreender o caso e avaliar o caminho juridicamente adequado.</p>
+    </div>
+  </section>
+
+  <!-- SIGILO E CONFIANÇA -->
+  <section class="band" id="confianca" aria-labelledby="confianca-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="trust">
+        <div class="trust-intro">
+          <p class="eyebrow">Sigilo e responsabilidade</p>
+          <h2 class="h2" id="confianca-title" style="font-size:clamp(34px,4vw,48px)">Confiança se constrói desde a primeira conversa</h2>
+          <p class="lede" style="font-size:16.5px">O sigilo é um dever do advogado e vale para tudo o que você me confiar, antes mesmo de qualquer contratação.</p>
+          <small>Publicidade de caráter meramente informativo, conforme o Código de Ética e o Provimento nº 205/2021 do Conselho Federal da OAB.</small>
+        </div>
+        <ul class="trust-list">
+          <li><b>Sigilo profissional</b><span>Informações e documentos tratados com a confidencialidade que a profissão exige.</span></li>
+          <li><b>Respeito à privacidade</b><span>Dados e documentos tratados com cuidado e confidencialidade.</span></li>
+          <li><b>Honorários em contrato</b><span>Valores e escopo combinados por escrito, antes de começar.</span></li>
+          <li><b>Sem promessa de resultado</b><span>Cada caso tem riscos próprios, e você os conhece desde o início.</span></li>
+          <li><b>Comunicação clara</b><span>Andamentos e prazos explicados de forma direta e acessível.</span></li>
+          <li><b>Tecnologia com critério</b><span>Documentos sensíveis em canais adequados e uso de IA com cautela.</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ATENDIMENTO -->
-  <section id="atendimento" style="padding:104px 56px;background:#FFFFFF">
-    <div style="max-width:1200px;margin:0 auto">
-      <div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#9A6B2F;font-weight:600">Atendimento</div>
-      <h2 style="margin:16px 0 0;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:clamp(32px,3.6vw,46px);line-height:1.12;max-width:720px">Como funciona</h2>
-      <div style="margin-top:56px;display:flex;flex-wrap:wrap;gap:40px">
-        <sc-for list="{{steps}}" as="step" hint-placeholder-count="3">
-          <div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:14px;padding-top:24px;border-top:2px solid #0F1B2D">
-            <div style="font-family:'Newsreader',Georgia,serif;font-size:44px;font-weight:500;color:#9A6B2F;line-height:1">{{step.n}}</div>
-            <h3 style="margin:0;font-size:20px;font-weight:600">{{step.title}}</h3>
-            <p style="margin:0;font-size:16px;line-height:1.65;color:#3A4658">{{step.text}}</p>
-          </div>
-        </sc-for>
+  <!-- DÚVIDAS -->
+  <section class="band" id="duvidas" aria-labelledby="duvidas-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2 class="h2" id="duvidas-title">Perguntas que todo mundo faz</h2>
       </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="duvidas" style="padding:104px 56px;background:#F6F3EC">
-    <div style="max-width:880px;margin:0 auto">
-      <div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#9A6B2F;font-weight:600">Dúvidas frequentes</div>
-      <h2 style="margin:16px 0 0;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:clamp(32px,3.6vw,46px);line-height:1.12">Antes de entrar em contato</h2>
-      <div style="margin-top:40px;border-top:1px solid #D9D2C3">
-        <sc-for list="{{faqs}}" as="faq" hint-placeholder-count="4">
-          <div style="border-bottom:1px solid #D9D2C3">
-            <button onClick="{{faq.toggle}}" aria-expanded="{{faq.isOpen}}" style="width:100%;min-height:44px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;background:none;border:0;cursor:pointer;font:inherit;font-size:19px;font-weight:600;color:#0F1B2D;text-align:left">
-              <span>{{faq.q}}</span>
-              <span aria-hidden="true" style="flex:none;font-size:28px;font-weight:400;color:#9A6B2F;line-height:1">{{faq.sign}}</span>
-            </button>
-            <sc-if value="{{faq.isOpen}}" hint-placeholder-val="{{false}}">
-              <p style="margin:0;padding:0 48px 28px 0;font-size:17px;line-height:1.7;color:#2B3748">{{faq.a}}</p>
-            </sc-if>
-          </div>
-        </sc-for>
+      <div class="faq">
+        <details><summary>Que situações podem ser analisadas em Direito Digital?</summary><div class="ans"><p>Questões relacionadas a sites, aplicativos, plataformas, comércio eletrônico, contratos digitais, conteúdo online e outras relações que acontecem no ambiente digital. A possibilidade de atuação depende dos fatos e dos documentos de cada caso.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de conversar sobre uma questão de Direito Digital." href="https://wa.me/" target="_blank" rel="noopener">Perguntar no WhatsApp</a></div></details>
+        <details><summary>Como funciona a orientação sobre LGPD?</summary><div class="ans"><p>O trabalho começa pela compreensão de quais dados pessoais são tratados, para quais finalidades e como isso acontece na prática. A partir desse diagnóstico, podem ser avaliados documentos, políticas, procedimentos internos e orientações necessárias para a realidade da organização.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de entender como funciona a orientação jurídica sobre LGPD." href="https://wa.me/" target="_blank" rel="noopener">Perguntar no WhatsApp</a></div></details>
+        <details><summary>Todo problema de consumo pode ir ao Juizado Especial Cível?</summary><div class="ans"><p>Não necessariamente. É preciso avaliar a natureza do conflito, os pedidos, os valores envolvidos, as provas disponíveis e os requisitos legais de competência. Na conversa inicial, posso analisar as informações e explicar os caminhos possíveis para o seu caso.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de avaliar se meu caso pode ser levado ao Juizado Especial Cível." href="https://wa.me/" target="_blank" rel="noopener">Conversar sobre meu caso</a></div></details>
+        <details><summary>Como funciona a primeira conversa?</summary><div class="ans"><p>Você conta o que está acontecendo, eu faço as perguntas necessárias e explico, com franqueza, se e como posso ajudar. A conversa inicial não obriga à contratação.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de agendar uma conversa inicial." href="https://wa.me/" target="_blank" rel="noopener">Perguntar no WhatsApp</a></div></details>
+        <details><summary>Como funcionam os honorários?</summary><div class="ans"><p>São definidos conforme o escopo e a complexidade do trabalho, com apresentação das condições antes do início da atuação e formalização por escrito.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de entender como funcionam os honorários." href="https://wa.me/" target="_blank" rel="noopener">Perguntar no WhatsApp</a></div></details>
+        <details><summary>Você garante o resultado?</summary><div class="ans"><p>Não. Cada caso tem circunstâncias e riscos próprios, e o resultado depende de fatores que não estão sob controle do advogado. O compromisso é com a atuação técnica, a transparência e a comunicação clara sobre as possibilidades.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site e gostaria de conversar sobre meu caso e os riscos envolvidos." href="https://wa.me/" target="_blank" rel="noopener">Conversar sobre meu caso</a></div></details>
+        <details><summary>Atende fora do Espírito Santo?</summary><div class="ans"><p>O atendimento pode ser realizado online. A possibilidade de atuação em cada caso é avaliada conforme a natureza da demanda e as regras aplicáveis da OAB.</p><a data-wa="Olá, Dr. Rafael! Vim pelo site. Estou fora do Espírito Santo e gostaria de saber se é possível o atendimento." href="https://wa.me/" target="_blank" rel="noopener">Perguntar no WhatsApp</a></div></details>
       </div>
     </div>
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" style="padding:96px 56px;background:#0F1B2D;color:#FFFFFF">
-    <div style="max-width:960px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:24px">
-      <h2 style="margin:0;font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:clamp(34px,4vw,52px);line-height:1.1">Vamos conversar sobre o seu caso?</h2>
-      <p style="margin:0;font-size:18px;line-height:1.6;color:#C9D1DC;max-width:560px">Envie uma mensagem pelo WhatsApp e conte brevemente a sua situação. Retorno direto com o advogado.</p>
-      <a class="btn" href="https://wa.me/5527999994100?text=Ol%C3%A1%2C%20Dr.%20Rafael.%20Gostaria%20de%20agendar%20uma%20conversa." style="margin-top:12px;display:inline-flex;align-items:center;gap:12px;min-height:60px;box-sizing:border-box;padding:0 36px;background:#D4A862;color:#0F1B2D;border-radius:999px;font-weight:600;font-size:18px">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5L3 21z"></path><path d="M9 10c0 3 2 5 5 5l1.2-1.4-2-1-.8.7c-.8-.3-1.6-1.1-1.9-1.9l.7-.8-1-2L9 10z"></path></svg>
-        (27) 99999-4100
-      </a>
+  <section class="band" id="contato" aria-labelledby="contato-title" style="padding-top:0">
+    <div class="wrap contact">
+      <div class="contact-intro">
+        <span class="mark seal" aria-hidden="true"><svg><use href="#rp-seal"/></svg></span>
+        <p class="eyebrow">Conversa inicial</p>
+        <h2 class="h2" id="contato-title">Vamos entender o seu caso?</h2>
+        <p class="lede">Conte em poucas linhas o que está acontecendo. A mensagem segue direto para o meu WhatsApp e eu respondo para combinarmos a conversa.</p>
+        <ol class="next">
+          <li>Você preenche o formulário ao lado, ou escolhe um tema acima.</li>
+          <li>A mensagem abre pronta no WhatsApp. É só enviar.</li>
+          <li>Eu respondo, entendo o seu cenário e digo com franqueza se e como posso ajudar.</li>
+        </ol>
+        <div class="direct">
+          <a data-wa="default" href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span> <b id="phone-display">falar agora</b></a>
+        </div>
+      </div>
+
+      <div class="form" id="form-card">
+        <form id="lead-form" novalidate>
+          <div style="display:grid;gap:16px">
+            <h3>Fale com o advogado</h3>
+            <div class="row">
+              <div class="field"><label for="f-nome">Seu nome <em>*</em></label><input id="f-nome" name="nome" autocomplete="name" required></div>
+              <div class="field"><label for="f-empresa">Empresa (se houver)</label><input id="f-empresa" name="empresa" autocomplete="organization"></div>
+            </div>
+            <div class="row">
+              <div class="field"><label for="f-assunto">Assunto</label>
+                <select id="f-assunto" name="assunto">
+                  <option value="">Selecione</option>
+        <option>Direito Digital</option>
+        <option>LGPD e proteção de dados pessoais</option>
+        <option>Juizado Especial Cível</option><option>Outro assunto / não sei dizer</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-tel">Seu WhatsApp <em>*</em></label><input id="f-tel" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(27) 99999-9999" required pattern="\(\d{2}\) \d{4,5}-\d{4}"></div>
+            </div>
+            <div class="field"><label for="f-msg">Em poucas linhas, o que está acontecendo?</label><textarea id="f-msg" name="mensagem" placeholder="Ex.: tive um problema com uma compra online e gostaria de entender quais são meus direitos."></textarea></div>
+            <p class="form-warn">Não envie documentos nem dados sensíveis por aqui. Combinamos o canal adequado durante a conversa.</p>
+            <label class="consent" for="f-ok"><input type="checkbox" id="f-ok" name="consentimento" required><span>Autorizo o advogado a entrar em contato sobre esta solicitação. Os dados são usados apenas para responder a este contato, conforme a LGPD.</span></label>
+            <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar e continuar no WhatsApp</button>
+            <p class="form-fine" id="form-error" role="alert" hidden></p>
+          </div>
+        </form>
+        <div class="done" id="done" hidden>
+          <h3 id="done-title">Pronto!</h3>
+          <p>Sua mensagem foi montada no WhatsApp. É só tocar em enviar por lá e eu respondo para combinarmos a conversa.</p>
+          <a class="btn btn-primary" id="done-link" href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Abrir o WhatsApp</a>
+          <p class="form-fine">O WhatsApp não abriu? Use o botão acima.</p>
+        </div>
+      </div>
     </div>
   </section>
+</main>
 
-  <!-- FOOTER -->
-  <footer style="padding:40px 56px;background:#0A1322;color:#9FAABA;font-size:13px;line-height:1.7">
-    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 40px">
-      <div style="display:flex;flex-direction:column;gap:4px">
-        <span style="font-family:'Newsreader',Georgia,serif;font-size:18px;color:#FFFFFF;font-weight:600">Rafael Pazeto Advocacia</span>
-        <span>Advogado · OAB/ES 28.047</span>
-      </div>
-      <div style="flex:1 1 360px;max-width:520px">
-        As informações deste site têm caráter exclusivamente informativo, nos termos do Provimento nº 205/2021 do Conselho Federal da OAB, e não constituem promessa de resultado nem aconselhamento jurídico.
-      </div>
-    </div>
-    <div style="max-width:1200px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)">© 2026 Rafael Pazeto. Todos os direitos reservados.</div>
-  </footer>
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Rafael Raasch Pazeto, Advocacia. Início">
+      <span class="mark" aria-hidden="true"><svg><use href="#rp-mark"/></svg></span>
+      <span class="brand-txt"><span class="brand-name">Rafael Raasch Pazeto</span><span class="brand-sub" id="oab">Advogado · OAB/ES</span></span>
+    </a>
+    <span>Direito Digital · LGPD · Juizado Especial Cível · Espírito Santo e atendimento online</span>
+    <nav aria-label="Rodapé">
+      <a data-wa="default" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#atuacao">Áreas de atuação</a>
+      <span>© 2026 Rafael Raasch Pazeto</span>
+    </nav>
+    <p class="legal">Conteúdo de caráter informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021 do Conselho Federal. Este site não constitui aconselhamento jurídico, não promete resultados e não substitui a análise individual de cada caso.</p>
+  </div>
+</footer>
 
-  <!-- WHATSAPP FLUTUANTE -->
-  <a class="btn" href="https://wa.me/5527999994100?text=Ol%C3%A1%2C%20Dr.%20Rafael.%20Gostaria%20de%20agendar%20uma%20conversa." aria-label="Falar com Rafael Pazeto no WhatsApp" style="position:fixed;right:24px;bottom:24px;z-index:50;width:60px;height:60px;border-radius:50%;background:#1B8F4B;color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5L3 21z"></path><path d="M9 10c0 3 2 5 5 5l1.2-1.4-2-1-.8.7c-.8-.3-1.6-1.1-1.9-1.9l.7-.8-1-2L9 10z"></path></svg>
-  </a>
-
+<div class="mbar" id="mbar">
+  <a class="btn btn-ghost" href="#contato">Agendar conversa</a>
+  <a class="btn btn-primary" data-wa="default" href="https://wa.me/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3700}}'>
-class Component extends DCLogic {
-  constructor(...args) {
-    super(...args);
-    this.state = { open: 0 };
-  }
-  renderVals() {
-    const faqSrc = [
-      { q: 'Como agendo uma conversa?', a: 'Pelo WhatsApp, no número (27) 99999-4100. Basta enviar uma mensagem resumindo a sua situação e eu retorno diretamente.' },
-      { q: 'O que devo enviar no primeiro contato?', a: 'Um resumo do que aconteceu e, se tiver, documentos relacionados: contratos, comprovantes, notificações, conversas e protocolos. Não precisa organizar tudo antes; começamos pelo essencial.' },
-      { q: 'O que são os Juizados Especiais?', a: 'São órgãos da Justiça voltados a causas de menor complexidade, com procedimento mais simples e ágil. Na primeira conversa eu avalio se o seu caso se encaixa nesse caminho.' },
-      { q: 'As informações que eu compartilhar ficam protegidas?', a: 'Sim. O sigilo profissional é um dever do advogado, previsto no Estatuto da Advocacia, e vale desde a primeira conversa.' }
-    ];
-    return {
-      figures: [
-        { value: '28.047', label: 'Inscrição OAB/ES', icon: 'M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6zM9 12l2 2 4-4' },
-        { value: '4', label: 'Áreas de atuação', icon: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z' },
-        { value: 'Direto', label: 'Atendimento feito pelo próprio advogado', icon: 'M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z' },
-        { value: 'Sigilo', label: 'Dever profissional em todo atendimento', icon: 'M5 11h14v10H5zM8 11V8a4 4 0 0 1 8 0v3' }
-      ],
-      checks: [
-        { text: 'Advogado inscrito na OAB/ES sob o nº 28.047' },
-        { text: 'Atendimento direto, sem intermediários' },
-        { text: 'Comunicação clara e sem juridiquês em cada etapa' },
-        { text: 'Estratégia definida a partir do seu caso, não de modelos prontos' }
-      ],
-      faqs: faqSrc.map((f, i) => ({
-        ...f,
-        isOpen: this.state.open === i,
-        sign: this.state.open === i ? '−' : '+',
-        toggle: () => this.setState({ open: this.state.open === i ? -1 : i })
-      })),
-      areas: ([
-        { title: 'Juizado Especial', text: 'Atuação em causas de menor complexidade nos Juizados Especiais, com agilidade e orientação desde a petição inicial até a audiência.', icon: 'M14 4l6 6-3 3-6-6zM11 7L4 14l3 3 7-7M3 21h8' },
-        { title: 'Direito Civil', text: 'Contratos, responsabilidade civil, indenizações e questões patrimoniais do dia a dia, com estratégia clara.', icon: 'M12 3v18M5 7h14M5 7l-2 6a3 3 0 0 0 6 0zM19 7l-2 6a3 3 0 0 0 6 0z' },
-        { title: 'Direito Empresarial', text: 'Assessoria a empresas e empreendedores: contratos comerciais, relações negociais e prevenção de conflitos.', icon: 'M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7' },
-        { title: 'Direito do Consumidor', text: 'Defesa dos seus direitos em cobranças indevidas, negativação, vícios de produtos e falhas na prestação de serviços.', icon: 'M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6zM9 12l2 2 4-4' }
-      ]).map((a) => ({ ...a, link: 'https://wa.me/5527999994100?text=' + encodeURIComponent('Olá, Dr. Rafael. Gostaria de conversar sobre ' + a.title + '.') })),
-      steps: [
-        { n: '01', title: 'Primeiro contato', text: 'Você envia uma mensagem pelo WhatsApp e apresenta sua situação de forma resumida.' },
-        { n: '02', title: 'Análise do caso', text: 'Avalio as informações e documentos, e explico com clareza as opções, riscos e caminhos possíveis.' },
-        { n: '03', title: 'Atuação e acompanhamento', text: 'Definimos a estratégia e você acompanha cada etapa, com comunicação direta durante todo o trabalho.' }
-      ]
-    };
-  }
-}
-</script>
+
+<!-- Bibliotecas de animação (GSAP + ScrollTrigger + Lenis) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<!-- Comportamento da página (WhatsApp, situações, formulário) -->
+<script src="js/main.js"></script>
+<!-- Animações: apague esta linha para desligar todas -->
+<script src="js/animations.js"></script>
 </body>
 </html>
