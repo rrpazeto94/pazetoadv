@@ -70,7 +70,7 @@ p{margin:0}
 .hero-proof{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;padding:0;margin:3px 0 0;font-size:14.5px;color:var(--mist)}
 .hero-proof li{display:flex;align-items:center;gap:8px}
 .hero-proof li::before{content:"";width:7px;height:7px;transform:rotate(45deg);background:var(--gold);flex:none}
-.hero-areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(42px,5.5vw,68px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero-areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:clamp(42px,5.5vw,68px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .hero-area{display:grid;grid-template-columns:28px 1fr 16px;gap:14px;align-items:start;padding:22px 22px 22px 0;text-decoration:none;min-width:0;transition:background-color .2s}
 .hero-area + .hero-area{padding-left:22px;border-left:1px solid var(--line)}
 .hero-area:hover .hero-area-arrow{transform:translate(3px,-3px);color:var(--gold-2)}
@@ -125,7 +125,7 @@ p{margin:0}
 
 /* Áreas de atuação */
 .section-head{display:flex;flex-direction:column;gap:16px;margin-bottom:44px;max-width:740px}
-.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .svc{display:flex;flex-direction:column;gap:14px;padding:30px;border-radius:var(--r);background:var(--ink-2);border:1px solid var(--line);transition:border-color .25s}
 .svc:hover{border-color:color-mix(in srgb,var(--gold) 45%,transparent)}
 .svc-badge{align-self:flex-start;font:600 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px;border-radius:6px;background:rgba(169,180,200,.1);color:var(--mist)}
@@ -135,7 +135,6 @@ p{margin:0}
 .svc li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15.5px;align-items:baseline}
 .svc li::before{content:"";width:7px;height:7px;transform:rotate(45deg) translateY(-1px);background:var(--gold);justify-self:center}
 .svc .btn{margin-top:auto;align-self:flex-start}
-@media (max-width:980px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:680px){.services{grid-template-columns:1fr}}
 
 /* Como funciona */
@@ -153,7 +152,7 @@ p{margin:0}
 @media (max-width:900px){.method{grid-template-columns:1fr}}
 
 /* Quem atendo (cada bloco abre o WhatsApp) */
-.segs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.segs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .segs > a{position:relative;padding:28px 24px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:background-color .25s}
 .segs > a:hover{background:color-mix(in srgb,var(--gold) 7%,transparent)}
 .segs h3{font-size:25px;font-weight:700}
