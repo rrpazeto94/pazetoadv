@@ -13,3 +13,8 @@ HTML, CSS e JavaScript puros, sem build.
 
 ## Publicação
 O site usa HTML/CSS/JS puros. Mantenha a pasta `assets/` do seu projeto original (logos, favicon e imagens) ao substituir os arquivos, caso ela exista. Suba o conteúdo atualizado para o GitHub e mantenha a estrutura `css/` e `js/`.
+
+## Identidade visual
+- `assets/logo-rafael.png`: monograma R dourado com fundo transparente, usado no cabeçalho, contato e rodapé.
+- `assets/logo-rafael-escura.png`: versão escura transparente para fundos claros.
+- `assets/favicon-64.png` e `assets/apple-touch-icon.png`: ícones do site.
